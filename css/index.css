@@ -55,7 +55,7 @@ h1 {
     padding: 15px;
 }
 
-.row {
+.articleCards {
     padding: 60px;
 }
 a:link {
@@ -72,8 +72,4 @@ a:link {
 .mainCardsTitle {
     text-align: center;
     padding: 100px;
-}
-
-.title {
-    margin-bottom: 0;
 }
