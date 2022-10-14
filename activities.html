@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/activities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Tourist Bureau</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <h2 class="title">Tourist Bureau</h2>
+                </div>
+            </div>
+        </div>
+        <div id="socialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="activities.html" class="nav-link">Activities</a></li>
+                        <li class="nav-item"><a href="hikes.html" class="nav-link">Hikes</a></li>
+                        <li class="nav-item"><a href="video.html" class="nav-link">Video</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <img class="image" src="images/tourist.jpg">
+    <h1>Activities</h1>
+    <div class="dropdown">
+        <select id="categories" onchange="selectCategory()">
+            <option selected>Select One</option>
+            <option value="Adventures">Adventures</option>
+            <option value="Museums">Museums</option>
+            <option value="Wine Tastings">Wine Tastings</option>
+        </select>
+    </div>
+    <div class="reveal1">
+        <div id="adventureInfo" style="display:none">
+            <img class="guidedTour" src="images/guidedtour.jpg">
+            <h1 class="option1">Renaissance-Explore Florence</h1>
+            <h4>About</h4>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <h5 style="text-align:left">Location: Florence, Italy</h5>
+            <h5 style="text-align:left">Price: $67.07 per person</h5>
+            <table>
+                <tr>
+                    <td>Number Of Tickets: </td>
+                    <td><input type="number" id="numOfTickets" /></td>
+                </tr>
+                <tr>
+                    <td>Credit Card Number:</td>
+                    <td><input type="tel" id="ccn" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                            maxlength="19" placeholder="xxxx xxxx xxxx xxxx" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Email: </td>
+                    <td><input type="email" id="email" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="showMessage" value="Purchase" onclick="displayMessage(this)"></td>
+                </tr>
+            </table>
+            <span id="messageDisplay"></span>
+        </div>
+    </div>
+
+
+    <div class="reveal2">
+        <div id="museumInfo" style="display:none">
+            <img class="guidedTour" src="images/guidedtour.jpg">
+            <h1 class="option1" id="adventureName">Museum</h1>
+            <h4>About</h4>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <h5 style="text-align:left">Location: Florence, Italy</h5>
+            <h5 style="text-align:left">Price: $67.07 per person</h5>
+            <table>
+                <tr>
+                    <td>Number Of Tickets: </td>
+                    <td><input type="number" id="numOfTickets" /></td>
+                </tr>
+                <tr>
+                    <td>Credit Card Number:</td>
+                    <td><input type="tel" id="ccn" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                            maxlength="19" placeholder="xxxx xxxx xxxx xxxx" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Email: </td>
+                    <td><input type="email" id="email" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="showMessage" value="Purchase" onclick="displayMessage(this)"></td>
+                </tr>
+            </table>
+            <div id="messageDisplay2"></div>
+        </div>
+    </div>
+    <div class="reveal3">
+        <div id="wineTastingInfo" style="display:none">
+            <img class="guidedTour" src="images/guidedtour.jpg">
+            <h1 class="option1">Wine Tasting</h1>
+            <h4>About</h4>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <p>Florence is known as the “cradle of the Renaissance” and the city was home to many important artists
+                and intellectuals. Find out more about Florentine history, culture, and the legendary Medici dynasty
+                behind the city's rise to power with this introductory walking tour. Stroll by highlights like the
+                cathedral, Uffizi Gallery, and Piazza della Signoria for an overview of the city's wonders in just a
+                couple of hours.</p>
+            <h5 style="text-align:left">Location: Florence, Italy</h5>
+            <h5 style="text-align:left">Price: $67.07 per person</h5>
+            <table>
+                <tr>
+                    <td>Number Of Tickets: </td>
+                    <td><input type="number" id="numOfTickets" /></td>
+                </tr>
+                <tr>
+                    <td>Credit Card Number:</td>
+                    <td><input type="tel" id="ccn" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                            maxlength="19" placeholder="xxxx xxxx xxxx xxxx" /></td>
+                </tr>
+                <tr>
+                    <td>Enter Email: </td>
+                    <td><input type="email" id="email" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="showMessage" value="Purchase" onclick="displayMessage(this)"></td>
+                </tr>
+            </table>
+            <span id="messageDisplay3"></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="Scripts/activities.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -40,37 +40,41 @@
     object-fit: cover;
 }
 
-.map {
-    float: right;
-    padding: 0 20px 20px 0;
-}
-
 h1 {
     text-align: center;
-    padding: 40px;
-}
-
-.text p {
-    font-size: 22px;
     padding: 15px;
 }
 
-.articleCards {
-    padding: 60px;
-}
-a:link {
-    text-decoration: none;
-}
-
-.card:hover {
-    background-color: rgb(228, 228, 228);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transform: scale(1.03);
-
-}
-.mainCardsTitle {
+.dropdown {
     text-align: center;
-    padding: 100px;
-    font-size: large;
+    font-size: 20px;
+}
+
+.reveal1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.reveal2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.reveal3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.guidedTour {
+    float: left;
+    padding: 0 20px 20px 0;
+    width: 40%;
+}
+
+.option1 {
+    font-size: 40px;
+    padding: 15px;
+}
+#showMessage {
+    text-align: left;
 }
