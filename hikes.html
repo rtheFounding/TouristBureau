@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hikes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Tourist Bureau</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <h2 class="title">Tourist Bureau</h2>
+                </div>
+            </div>
+        </div>
+        <div id="socialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="activities.html" class="nav-link">Activities</a></li>
+                        <li class="nav-item"><a href="hikes.html" class="nav-link">Hikes</a></li>
+                        <li class="nav-item"><a href="video.html" class="nav-link">Video</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <img class="image" src="images/tourist.jpg">
+    <div class="dropdown">
+        <select id="categories" onchange="selectCategory()">
+            <option selected>--Select Hike Trail--</option>
+        </select>
+    </div>
+    <div class="reveal1">
+        <div id="hiking1" style="display:none">
+            <img class="picture1" id="myImg1" src="images/piazza-del-duomo.jpg">
+            <!--<img class="picture2" style="display: none; "src="images/map.jpg">-->
+            <h1 class="option1">Piazza Duomo</h1>
+            <h4>About</h4>
+            <p>This point-to-point trail is an easy trail that is 3.2 miles long and is located in Florence. This urban
+                hike will take you through Florence and showcase several of the iconic landmarks in the city center.
+                Take an easy stroll through Piazza Duomo and take in the breathtaking architecture.You will make your
+                way through the piazza and see the Ponte Vecchio, Basilica San Lorenzo, and the
+                Piazzale Michelangelo.</p>
+            <h5 style="text-align:left">Location: Firenze, Piazza Duomo</h5>
+            <button id="showPic1" onclick="changePicture()">Trail Map</button>
+        </div>
+    </div>
+    <div class="reveal2">
+        <div id="hiking2" style="display:none">
+            <img class="picture1" id="myImg2" src="images/piandei.jpg">
+            <!--<img class="picture2" style="display: none;" src="images/map.jpg">-->
+            <h1 class="option1">Pian dei Giullari</h1>
+            <h4>About</h4>
+            <p>This six-mile loop begins and ends at the Villa le Piazzole and is primarily used for hiking, nature
+                trips, jogging, running, and mountain biking. The trail is a bit rough and does require you to be in
+                shape to tackle. Since this is a multi-use trail, be
+                aware of your surroundings and others using the trails, especially cyclists.</p>
+            <h5 style="text-align:left">Location: Villa le Piazzole</h5>
+            <button id="showPic2" onclick="changePicture()">Trail Map</button>
+        </div>
+    </div>
+
+    <div class="reveal3">
+        <div id="hiking3" style="display:none">
+            <img class="picture1" id="myImg3" src="images/forestwalk.jpg">
+            <!--<img class="picture2" style="display: none;" src="images/map.jpg">-->
+            <h1 class="option1">Settignano Forest Walk</h1>
+            <h4>About</h4>
+            <p>There is nothing better than taking a relaxing walk through Settignano Forest. You will set off down an
+                easy to follow path and enjoy wonderful views of the olive groves and the forest, and look out over
+                Florence.
+                Take a small side hike along the Sentiero dei Scalpellini path which is just past the Villa Morghen and
+                is rumored to have been used by Michelangelo while he was mining for marble nearby.</p>
+            <h5 style="text-align:left">Location: Settignano Forest</h5>
+            <button id="showPic3" onclick="changePicture()">Trail Map</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="Scripts/hikes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
