@@ -1,0 +1,88 @@
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#socialMedia {
+    text-align: right;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #eb2445;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    max-height: 30em;
+    object-fit: cover;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.dropdown {
+    text-align: center;
+    font-size: 20px;
+}
+
+.reveal1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.reveal2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.reveal3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.picture1 {
+    float: left;
+    padding: 0 20px 20px 0;
+    width: 40%;
+}
+
+.option1 {
+    font-size: 40px;
+    padding: 15px;
+}
+#showMessage {
+    text-align: left;
+}
+.picture2 {
+    float: left;
+    padding: 0 20px 20px 0;
+    width: 40%;
+}
+.dropdown {
+    text-align: center;
+    font-size: 20px;
+}
